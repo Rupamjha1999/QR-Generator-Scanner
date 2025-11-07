@@ -1,3 +1,7 @@
+##QR-generator-scanner URL
+https://rupamjha1999.github.io/QR-Generator-Scanner/
+
+
 ##homae page video
 
 
