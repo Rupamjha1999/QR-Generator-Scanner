@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #27d9bfe5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,105 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.navbar {
+  position: fixed; /* Stays on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #27d9bfe5; /* Transparent black */
+  backdrop-filter: blur(8px); /* Frosted-glass effect */
+  z-index: 10; /* Keeps navbar above video */
+  opacity: 0.6;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+ 
+}
+
+.navbar-nav .nav-link,
+.btn {
+  color: white !important;
+   font-weight: bold;
+  transition: color 0.3s ease;
+  background-color:#27d9bfe5;
+
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='blue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.btn:hover {
+  color: #2b00ff !important; /* Light blue hover effect */
+}
+
+   
+.footerdiv{
+   background-color: #27d9bfe5;
+  
+ 
+}
+.footer{
+   background-color: #27d9bfe5; /* Transparent black */
+  /* Frosted-glass effect */
+  position: relative; /* Stays on top */
+  bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  color:white;
+}
+
+.flogo{
+  width: 30px;
+  margin-right: 10px;
+}
+.codelogo{
+  margin-top: 2%;
+  width:50%;
+}
+.product{
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.product h1{
+  margin-top: 8vh;
+}
+.popup-image {
+  transform: scale(0.8);
+  opacity: 1;
+  margin-top: 7vh;
+  width: 50vh;
+  animation: zoomLoop 2s ease-in-out infinite;
+}
+
+@keyframes zoomLoop {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.home{
+  min-height: 97vh;
+  }
+
+
+.home h1{
+  color:#61dafb;
+  font-size: 8vh;
+}
+.scan{
+  min-height: 97vh;
 }
